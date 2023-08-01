@@ -1,0 +1,136 @@
+/* Mobile first */
+
+#root {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p,
+button,
+input {
+  font-family: "Verdana";
+  line-height: 1;
+  font-size: 16px;
+}
+
+p {
+  color: white;
+}
+button {
+  color: white;
+}
+
+.App {
+  width: 350px;
+  max-width: 100%;
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 5px solid orangered;
+  border-radius: 50px;
+  margin: 25px;
+  max-height: 700px;
+  background-image: url("../../public/images/night.jpg");
+  /*border: 5px solid orangered;*/
+}
+
+#LocationName {
+  font-size: 50px;
+  margin: 25px 0;
+}
+
+#Description {
+  font-size: 25px;
+}
+
+button {
+  border: none;
+  min-width: 100px;
+  padding: 10px 20px;
+  font-size: 16px;
+  /*background-color: orangered;*/
+  background-color: orangered;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#Temperature {
+  font-size: 75px;
+  margin: 25px 0;
+}
+.metric::after {
+  content: "°c";
+}
+
+.imperial::after {
+  content: "°f";
+}
+
+.kmph::after {
+  content: "kmph";
+}
+
+.Mph::after {
+  content: "mph";
+}
+
+#UnitTypeButtonsContainer {
+  margin-top: 50px;
+}
+
+#MetricButton {
+  border-radius: 0 0 0 20px;
+}
+
+#ImperialButton {
+  border-radius: 0 0 20px 0;
+}
+
+#Search {
+  border-radius: 0 20px 0 0;
+}
+
+.Align-Right {
+  float: right;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+}
+
+.Border {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: inset 1px 1px 10px #333;
+  -moz-box-shadow: inset 1px 1px 10px #333;
+  box-shadow: inset 2px 2px 5px #333;
+}
+
+.hide {
+  display: none;
+}
+
+.Error-Message {
+  margin-top: 25px;
+  color: red;
+}
